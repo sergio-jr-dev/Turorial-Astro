@@ -12,7 +12,7 @@ const { frontmatter } = Astro.props;
   <slot />
   <div class="tags">
     {
-      frontmatter.tags.map((tag) => (
+      frontmatter.map((tag) => (
         <p>
           <a class="tag" href={`/tafs/${tag}`}>
             {tag}
